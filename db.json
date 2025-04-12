@@ -10334,5 +10334,248 @@
             "showAdjudicationFlag": false,
             "adjudicationText": ""
         }
+    ],
+
+    "category":  [
+        {
+            "id": 20,
+            "categoryName": "Deal of the Month",
+            "categoryType": "OTC",
+            "categoryOrder": 0,
+            "isActive": 1,
+            "createdAt": "2024-01-11",
+            "updatedAt": "2024-01-11",
+            "deletedAt": null,
+            "categoryImageSlug": [
+                "https://mb-meds-assets.medibuddy.in/medicineImages/deal_of_the_month.webp"
+            ],
+            "alternativeText": "Deal of the Month",
+            "categoryId": 20,
+            "top_deals": []
+        },
+        {
+            "id": 19,
+            "categoryName": "Deal of the Day",
+            "categoryType": "OTC",
+            "categoryOrder": 1,
+            "isActive": 1,
+            "createdAt": "2023-03-24 18:38:53",
+            "updatedAt": "2023-03-24 18:38:53",
+            "deletedAt": null,
+            "categoryImageSlug": [
+                "https://mb-meds-assets.medibuddy.in/medicineImages/today_s_exclusive_deals.webp"
+            ],
+            "alternativeText": "Deal of the Day",
+            "categoryId": 19,
+            "top_deals": []
+        },
+        {
+            "id": 2,
+            "categoryName": "Sexual Wellness",
+            "categoryType": "OTC",
+            "categoryOrder": 2,
+            "isActive": 1,
+            "createdAt": "2022-06-20 18:38:53",
+            "updatedAt": "2022-07-27 13:11:40",
+            "deletedAt": null,
+            "categoryImageSlug": [
+                "https://mb-meds-assets.medibuddy.in/medicineImages/sexual_wellness.webp"
+            ],
+            "alternativeText": "Sexual Wellness",
+            "categoryId": 2,
+            "top_deals": []
+        },
+        {
+            "id": 9,
+            "categoryName": "Hair and Skin Care",
+            "categoryType": "OTC",
+            "categoryOrder": 4,
+            "isActive": 1,
+            "createdAt": "2022-06-20 18:38:53",
+            "updatedAt": "2022-07-21 06:42:44",
+            "deletedAt": null,
+            "categoryImageSlug": [
+                "https://mb-meds-assets.medibuddy.in/medicineImages/hair_skin_care.webp"
+            ],
+            "alternativeText": "Hair and Skin Care",
+            "categoryId": 9,
+            "top_deals": []
+        },
+        {
+            "id": 16,
+            "categoryName": "Health Supplements",
+            "categoryType": "OTC",
+            "categoryOrder": 6,
+            "isActive": 1,
+            "createdAt": "2022-07-19 18:51:10",
+            "updatedAt": "2022-07-21 06:42:51",
+            "deletedAt": null,
+            "categoryImageSlug": [
+                "https://mb-meds-assets.medibuddy.in/medicineImages/health_supplements.webp"
+            ],
+            "alternativeText": "Health Supplements",
+            "categoryId": 16,
+            "top_deals": []
+        },
+        {
+            "id": 10,
+            "categoryName": "Basic Health Essentials",
+            "categoryType": "OTC",
+            "categoryOrder": 7,
+            "isActive": 1,
+            "createdAt": "2022-06-20 18:38:53",
+            "updatedAt": "2022-07-21 06:42:45",
+            "deletedAt": null,
+            "categoryImageSlug": [
+                "https://mb-meds-assets.medibuddy.in/medicineImages/basic_health_essentials.webp"
+            ],
+            "alternativeText": "Basic Health Essentials",
+            "categoryId": 10,
+            "top_deals": []
+        },
+        {
+            "id": 5,
+            "categoryName": "Devices",
+            "categoryType": "OTC",
+            "categoryOrder": 8,
+            "isActive": 1,
+            "createdAt": "2022-06-20 18:38:53",
+            "updatedAt": "2022-07-21 06:42:40",
+            "deletedAt": null,
+            "categoryImageSlug": [
+                "https://mb-meds-assets.medibuddy.in/medicineImages/medical_devices.webp"
+            ],
+            "alternativeText": "Devices",
+            "categoryId": 5,
+            "top_deals": []
+        },
+        {
+            "id": 11,
+            "categoryName": "Dental Care",
+            "categoryType": "OTC",
+            "categoryOrder": 13,
+            "isActive": 1,
+            "createdAt": "2022-06-20 18:38:53",
+            "updatedAt": "2022-07-27 13:11:42",
+            "deletedAt": null,
+            "categoryImageSlug": [
+                "https://mb-meds-assets.medibuddy.in/medicineImages/dental_care.webp"
+            ],
+            "alternativeText": "Dental Care",
+            "categoryId": 11,
+            "top_deals": []
+        },
+        {
+            "id": 13,
+            "categoryName": "Women Care",
+            "categoryType": "OTC",
+            "categoryOrder": 14,
+            "isActive": 1,
+            "createdAt": "2022-06-20 18:38:53",
+            "updatedAt": "2022-07-21 06:42:48",
+            "deletedAt": null,
+            "categoryImageSlug": [
+                "https://mb-meds-assets.medibuddy.in/medicineImages/women_s_essentials.webp"
+            ],
+            "alternativeText": "Women Care",
+            "categoryId": 13,
+            "top_deals": []
+        },
+        {
+            "id": 14,
+            "categoryName": "Deodrants",
+            "categoryType": "OTC",
+            "categoryOrder": 16,
+            "isActive": 1,
+            "createdAt": "2022-07-19 18:51:09",
+            "updatedAt": "2022-07-21 06:42:49",
+            "deletedAt": null,
+            "categoryImageSlug": [
+                "https://mb-meds-assets.medibuddy.in/medicineImages/deodorants_fragrances.webp"
+            ],
+            "alternativeText": "Deodrants",
+            "categoryId": 14,
+            "top_deals": []
+        },
+        {
+            "id": 17,
+            "categoryName": "Ayurvedic Care",
+            "categoryType": "OTC",
+            "categoryOrder": 17,
+            "isActive": 1,
+            "createdAt": "2022-12-15 18:51:10",
+            "updatedAt": "2022-12-15 18:51:10",
+            "deletedAt": null,
+            "categoryImageSlug": [
+                "https://mb-meds-assets.medibuddy.in/medicineImages/health_supplements.webp"
+            ],
+            "alternativeText": "Ayurvedic Care",
+            "categoryId": 17,
+            "top_deals": []
+        },
+        {
+            "id": 1,
+            "categoryName": "Baby Care",
+            "categoryType": "OTC",
+            "categoryOrder": 19,
+            "isActive": 1,
+            "createdAt": "2022-06-20 18:38:53",
+            "updatedAt": "2022-07-21 06:31:44",
+            "deletedAt": null,
+            "categoryImageSlug": [
+                "https://mb-meds-assets.medibuddy.in/medicineImages/baby_care_products.webp"
+            ],
+            "alternativeText": "Baby Care",
+            "categoryId": 1,
+            "top_deals": []
+        },
+        {
+            "id": 25,
+            "categoryName": "Fitness equipments",
+            "categoryType": "OTC",
+            "categoryOrder": 22,
+            "isActive": 1,
+            "createdAt": "2024-10-09",
+            "updatedAt": "2024-10-09",
+            "deletedAt": null,
+            "categoryImageSlug": [
+                "https://mb-meds-assets.medibuddy.in/medicineImages/today_s_exclusive_deals.webp"
+            ],
+            "alternativeText": "Fitness equipments",
+            "categoryId": 25,
+            "top_deals": []
+        },
+        {
+            "id": 26,
+            "categoryName": "Fitness supplements",
+            "categoryType": "OTC",
+            "categoryOrder": 23,
+            "isActive": 1,
+            "createdAt": "2024-10-09",
+            "updatedAt": "2024-10-09",
+            "deletedAt": null,
+            "categoryImageSlug": [
+                "https://mb-meds-assets.medibuddy.in/medicineImages/today_s_exclusive_deals.webp"
+            ],
+            "alternativeText": "Fitness supplements",
+            "categoryId": 26,
+            "top_deals": []
+        },
+        {
+            "id": 27,
+            "categoryName": "Fitness devices",
+            "categoryType": "OTC",
+            "categoryOrder": 24,
+            "isActive": 1,
+            "createdAt": "2024-10-10",
+            "updatedAt": "2024-10-10",
+            "deletedAt": null,
+            "categoryImageSlug": [
+                "https://mb-meds-assets.medibuddy.in/medicineImages/today_s_exclusive_deals.webp"
+            ],
+            "alternativeText": "Fitness devices",
+            "categoryId": 27,
+            "top_deals": []
+        }
     ]
 }

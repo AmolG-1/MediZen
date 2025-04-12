@@ -1,11 +1,37 @@
-import React from 'react';
+import { Container, Typography } from '@mui/material';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import CategoryCard from '../components/CategoryCard';
 
 
 const MedicineHome = () => {
+    const[categoryList,setCategoryList] = useState([]);  
+
+    useEffect(()=>{
+      getCategorySections(); 
+    },[]);
+    
+    function getCategorySections(){
+      const URL = "http://localhost:3000/category";
+      axios.get(URL).then((resp)=>{
+          if(resp){
+             setCategoryList(resp.data);
+          }
+      }).catch((error)=>{
+
+      })
+    }
+
 
     return (
-      <>
-         <h2>MedicineHome</h2>
+      <>         
+         <Container sx={{border:2,  marginTop:4}}>
+         <Typography gutterBottom variant="h6" component="div">
+                     Search By Category  
+          </Typography>
+
+          <CategoryCard categories={categoryList}></CategoryCard>
+         </Container>
       </>
 
     )

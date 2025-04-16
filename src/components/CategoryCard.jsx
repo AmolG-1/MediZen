@@ -5,6 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Box, Container, Grid, IconButton } from "@mui/material";
 import { ArrowBackIosNew, ArrowForwardIos } from "@mui/icons-material";
+import { NavLink } from "react-router-dom";
 
 
 const CategoryCard = ({ categories = [] }) => {
@@ -36,8 +37,8 @@ const CategoryCard = ({ categories = [] }) => {
                             <Grid item xs={12} sm={4} md={2} key={card.id}>
                                 <Card elevation={4}>
                                     <CardContent>
-                                        <Typography gutterBottom variant="h6" component="div" sx={{ fontSize: '16px', fontWeight: 'bolder', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>
-                                            {card.categoryName}
+                                        <Typography  gutterBottom variant="h6" component="div" sx={{ fontSize: '16px', fontWeight: 'bolder', overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>
+                                           <NavLink to={`/order-medicine/category/${card.categoryName.replace(/\s+/g,'-')}-${card.categoryId}`}  > {card.categoryName} </NavLink>
                                         </Typography>
                                         <CardMedia
                                             sx={{ height: 140, width: 160 }}

@@ -18,7 +18,7 @@ function App() {
           <Route path='home' element={<Home />}></Route>
           <Route path='order-medicine' element={<MedicineHome />}></Route>
           <Route path='order-medicine/search/:searchKey' element={<SearchResults />}></Route>
-          <Route path='order-medicine/category' element={<ShopByCategory />}></Route> 
+          <Route path='order-medicine/category/:categoryName' element={<ShopByCategory />}></Route> 
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -83,7 +83,7 @@ const ShopByCategory = () => {
                     </Tabs>
                     <Grid container spacing={2} mt={4}>
                         {medicineList.map((med) => (
-                            <MedicineCard medicine={med}></MedicineCard>
+                            <MedicineCard key={med.id} medicine={med}></MedicineCard>
                         ))}
                     </Grid>
 

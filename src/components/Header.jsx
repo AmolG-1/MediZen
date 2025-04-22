@@ -13,12 +13,16 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import Badge from '@mui/material/Badge';
 import { CartContext } from '../context/CartContext';
-
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import { AuthContext } from '../context/AuthContext';
 const Header = () => {
   const [medicineList, setMedicineList] = useState([]);
   const [searchText, setSerarchText] = useState("");
   const navigate = useNavigate();
   const {cartCount} = useContext(CartContext);
+  const {isAuthenticated} = useContext(AuthContext);
 
   useEffect(() => {
     //o x y
@@ -45,6 +49,15 @@ const Header = () => {
       navigate(`/order-medicine/search/${searchText}`)
     }
   }
+
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event?.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   return (
     <>
@@ -88,14 +101,44 @@ const Header = () => {
               )}
             />
 
-
-            <IconButton color="primary" aria-label="add to shopping cart">
-              <Badge badgeContent={cartCount} color="primary">
-               <NavLink to='/cart'> <AddShoppingCartIcon /> </NavLink>
-              </Badge>
-            </IconButton>
+            <NavLink to='/cart'>
+              <IconButton color="primary" aria-label="add to shopping cart">
+                <Badge badgeContent={cartCount} color="primary">
+                  <AddShoppingCartIcon />
+                </Badge>
+              </IconButton>
+            </NavLink>
             <Button color="inherit">About Us</Button>
-            <Button color="inherit">Login</Button>
+            {
+              !isAuthenticated ?   <Button color="inherit">Login</Button> :
+              <div>
+              <Button
+                id="basic-button"
+                aria-controls={open ? 'basic-menu' : undefined}
+                aria-haspopup="true"
+                aria-expanded={open ? 'true' : undefined}
+                onClick={handleClick}
+                endIcon={<ArrowDropDownIcon />}
+              >
+                My Account
+              </Button>
+              <Menu
+                id="basic-menu"
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleClose}
+                MenuListProps={{
+                  'aria-labelledby': 'basic-button',
+                }}
+              >
+                <MenuItem onClick={handleClose}>Profile</MenuItem>
+                <MenuItem onClick={handleClose}>My account</MenuItem>
+                <MenuItem onClick={handleClose}>Logout</MenuItem>
+              </Menu>
+            </div>
+            }
+          
+           
           </Toolbar>
         </AppBar>
       </Box>

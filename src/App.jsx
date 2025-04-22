@@ -11,6 +11,7 @@ import Login from './pages/Login'
 import Cart from './pages/Cart'
 import PrivateRoute from './routes/PrivateRoute'
 import AuthProvider from './context/AuthContext'
+import PatientDetails from './pages/PatientDetails'
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
             <Route path='order-medicine/category/:categoryName' element={<ShopByCategory />}></Route>
             <Route path='cart' element={<PrivateRoute> <Cart/> </PrivateRoute>}></Route>
             <Route path='login' element={<Login/>}></Route>
+            <Route path='patient-details' element={<PatientDetails/>}></Route>
           </Routes>
           <Footer />
         </BrowserRouter>
